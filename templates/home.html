@@ -1,0 +1,10 @@
+<h1>Word Count</h1>
+<br />
+<h2><a href="{% url 'about' %}">About Website</a></h2>
+
+<form action="{% url 'count' %}">		<! url name here should be same as the one passed in views.py file>
+	<textarea cols="40" rows="10" name="fulltext"></textarea>
+	<br />
+	<br />
+	<input type="submit" value="Count!" />
+</form>

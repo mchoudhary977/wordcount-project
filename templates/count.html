@@ -1,0 +1,16 @@
+<h1>There are {{ count }} words in your text</h1>
+<h1>Your text: </h1>
+{{ fulltextdict }}
+<br />
+<br />
+<h2><a href="{% url 'home' %}">Start Again</a></h2>
+
+<br />
+<br />
+<h2><a href="{% url 'about' %}">About Website</a></h2>
+
+<h1>Word Count</h1>
+{% for word, countTot in sortedwords %}
+	{{ word }} - {{countTot }}
+	<br />
+{% endfor %}
